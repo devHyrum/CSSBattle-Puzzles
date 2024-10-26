@@ -1,0 +1,105 @@
+body{
+    background: #373794;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .cabeca {
+    width: 9rem;
+    height: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    ul{
+      list-style:none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      z-index: 1;
+    }
+  }
+#testa-amarela{
+  width: 6rem;
+  height: 6rem;
+  background: #F3AC3C;
+  border-radius: 50%;
+  clip-path: circle(70% at 50% 0%);
+  position: relative;
+  top: 1rem;
+}
+#bochecha-rocha{
+  width: 5rem;
+  height: 4rem;
+  background: #0E0E39;
+  border-radius: 0rem 0rem 5rem 5rem;
+  position: relative;
+  bottom:1rem
+}
+  
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-end;
+  z-index: 2;
+  position: absolute;
+  bottom: 4.5rem;
+  article{
+    display:flex;
+    justify-content: center;
+    div{
+      width: 6.2rem;
+      height: 4.4rem;
+      background: #0E0E39;
+      justify-items: flex-end;
+      align-content: flex-end;
+      border-radius: 0rem 3.5rem 0rem 5rem;
+      position: relative;
+      top: 1rem;
+      p{
+      width: 1.9rem;
+      height: 1.3rem;
+      background: #FFFFFF;
+      }
+    }
+    div:nth-child(1){
+      p{
+      position: relative;
+      right: 0.3rem;
+      top: 0.4rem;
+      border-radius: 0rem 3.5rem 0rem 4rem
+      }
+    }
+    div:nth-child(2){
+      transform: rotate(-361deg) scaleX(-1.02);
+      p{
+      position: relative;
+      right: 0.3rem;
+      top: 0.4rem;
+      border-radius: 0rem 3.5rem 0rem 4rem
+      }
+    }
+  }
+  section{
+    display:flex;
+    width: 3.4rem;
+    height: 4.2rem;
+    border-radius: 0rem 0rem 5rem 5rem;
+    background: #F3AC3C;
+    justify-content: center;
+    align-items: center;
+    p{
+      background: #FFFFFF;
+      width: 2.5rem;
+      height: 1.3rem;
+      border-radius: 1rem;
+      position: relative;
+      top: 0.4rem;
+    }
+  }
+}

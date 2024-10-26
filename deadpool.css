@@ -1,0 +1,82 @@
+body{
+    background: #F3AC3C;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+}
+.cabeca {
+  width: 12.8rem;
+  height: 12.8rem;
+  background: #9F3333;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease; /*all todas as propriedades que podem ser animadas no elemento*/
+  position: relative;
+  left: -100%;
+  animation: slide-in 1.5s ease forwards;
+  &:hover{
+    cursor: pointer;
+    box-shadow: #9F3333 0px 22px 70px 4px;
+  }
+  &:active{
+    height: 14rem;
+    width: 14rem;
+  }
+}
+.fundo-preto{
+  background: black;
+  width: 10.5rem;
+  height: 10.5rem;
+  border-radius: 100%;
+  opacity: 0;
+  animation: fade-in 3s ease 1s forwards;
+  ul{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+.olho {
+  background: white;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50% / 0;
+  clip-path: circle(50% at 50% 0%);
+  }
+.olho1 {
+    transform: rotate(32deg);
+}
+.olho2 {
+    transform: rotate(332deg);
+}
+.separacao{
+  background: #9F3333;
+  width: 2.2rem;
+  height: 100%;
+}
+
+@keyframes slide-in {
+  0% {
+      left: -100%;
+  }
+  100% {
+      left: 0;
+  }
+}
+@keyframes fade-in {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
